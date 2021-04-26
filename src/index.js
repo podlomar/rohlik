@@ -6,8 +6,8 @@ const Card = (props) => {
       <div class="card__heading">
         ${props.heading}
       </div>
-      <div class="card__content">
-        ${props.content}
+      <div class="card__body">
+        ${props.body}
       </div>
       <img class="card__image" src="${props.image}" />
     </div>
