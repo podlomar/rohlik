@@ -3,11 +3,11 @@ import './style.css';
 const Card = (props) => {
   return `
     <div class="card">
-      <div class="card__head">
-        ${props.head}
+      <div class="card__heading">
+        ${props.heading}
       </div>
-      <div class="card__text">
-        ${props.text}
+      <div class="card__content">
+        ${props.content}
       </div>
       <img class="card__image" src="${props.image}" />
     </div>
@@ -15,5 +15,5 @@ const Card = (props) => {
 };
 
 const appElm = document.querySelector('#app');
-appElm.innerHTML += Card({ head: 'Doručení ještě dnes' });
+appElm.innerHTML += Card({ heading: 'Doručení ještě dnes' });
 
